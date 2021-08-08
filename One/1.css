@@ -1,0 +1,15 @@
+svg {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    pointer-events: none;
+}
+#one {
+    animation: firstAnimation 2s linear forwards infinite;
+}
+@keyframes firstAnimation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* https://fjolt.com/article/css-animate-svg-paths */
