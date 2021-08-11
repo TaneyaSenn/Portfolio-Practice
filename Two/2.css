@@ -1,3 +1,11 @@
+/* FONTS */
+@font-face {
+    font-family: 'WindSong', cursive;
+    src: url('/Two/Font/WindSong-Regular.ttf');
+}
+
+/* BODY & HEADER */
+
 body {
     background-color: cornflowerblue;
 }
@@ -10,6 +18,7 @@ body {
     top: 0px;
 }
 
+/* CONTAINER & SET UP FOR 9 BOXES */
 
 .container {
     display: flex;
@@ -28,6 +37,8 @@ body {
     background-color: white;
 }
 
+/* BOX 1: HOVER LINEAR-GRADIENT */
+
 #box1 {
     font: 22px Arial;
     display: flex;
@@ -38,11 +49,14 @@ body {
     background-size: 200%;
     transition: .7s ease-out;
     border: dotted;
+    z-index: 1;
 }
 
 #box1:hover {
     background-position: left;
 }
+
+/* BOX 2: FALLING BALLS & ANIMATED GREETING */
 
 #box2 {
     overflow: hidden;
@@ -50,45 +64,44 @@ body {
 .ball {
     width: 20px;
 	height: 20px;
-	background: palegoldenrod;
+	background: rgb(247, 136, 165);
 	position: relative;
 	left: 50%;
 	top: 10%;
 	border-radius: 50%; 
-    animation: bounce 1s ease;
-    
+    animation: bounce 1s ease;    
 }
 
 .ball:nth-child(2) {
     background: #fbc9ff;
     animation: bounce 1s;
     position: relative;
-    left: 80%;
-    top: 15%;
+    left: 83%;
+    top: 20%;
 }
 
 .ball:nth-child(3) {
     background: rgb(148, 226, 159);
     animation: bounce 0.7s ease;
     position: relative;
-    left: 30%;
+    left: 36%;
     top: 20%;
 }
 
 .ball:nth-child(4) {
     background: rgb(235, 116, 116);
-    animation: bounce 0.2s ease;
+    animation: bounce 0.5s ease;
     position: relative;
-    left: 70%;
-    top: 22%;
+    left: 10%;
+    top: 5%;
 }
 
 .ball:nth-child(5) {
-    background: rgb(148, 226, 159);
+    background: rgb(197, 250, 177);
     animation: bounce 0.5s ease;
     position: relative;
-    left: 30%;
-    top: 20%;
+    left: 74%;
+    top: 50%;
 }
 
 .ball:nth-child(6) {
@@ -104,30 +117,30 @@ body {
     animation: bounce 0.5s ease;
     position: relative;
     left: 90%;
-    top: -20%;
+    top: -40%;
 }
 
 .ball:nth-child(8) {
-    background: red;
+    background: rgb(254, 114, 114);
     animation: bounce 0.5s ease;
     position: relative;
-    left: 830%;
-    top: 60%;
+    left: 39%;
+    top: 10%;
 }
 
 .ball:nth-child(9) {
     background: rgb(201, 245, 235)
     animation: bounce 0.5s ease;
     position: relative;
-    left: 40%;
-    top: 0%;
+    left: 63%;
+    top: -12%;
 }
 
 .ball:nth-child(10) {
-    background: rgb(148, 226, 159);
+    background: rgb(162, 209, 230);
     animation: bounce 0.5s ease;
     position: relative;
-    left: 60%;
+    left: 21%;
     top: -70%;
 }
 
@@ -140,19 +153,75 @@ body {
 }
 
 .ball:nth-child(12) {
-    background: yellow;
+    background: #fbc9ff;
     animation: bounce 0.5s ease;
     position: relative;
-    left: 80%;
-    top: -80%;
+    left: 64%;
+    top: -20%;
 }
 
 .ball:nth-child(13) {
-    background: yellow;
+    background: rgb(235, 116, 116);
     animation: bounce 0.5s ease;
     position: relative;
+    left: 72%;
+    top: -83%;
+}
+
+.ball:nth-child(14) {
+    background: #fbc9ff;
+    animation: bounce 1s;
+    position: relative;
+    left: 23%;
+    top: -40%;
+}
+
+.ball:nth-child(15) {
+    background: rgb(168, 172, 255);
+    animation: bounce 0.7s ease;
+    position: relative;
     left: 50%;
-    top: -75%;
+    top: -65%;
+}
+
+.ball:nth-child(16) {
+    background: rgb(197, 250, 177);
+    animation: bounce 0.5s ease;
+    position: relative;
+    left: 35%;
+    top: -40%;
+}
+
+.ball:nth-child(17) {
+    background: rgb(168, 172, 255);
+    animation: bounce 0.5s ease;
+    position: relative;
+    left: 63%;
+    top: -100%;
+}
+
+.ball:nth-child(18) {
+    background: rgb(145, 216, 247);
+    animation: bounce 0.8s ease;
+    position: relative;
+    left: 85%;
+    top: -60%;
+}
+
+.ball:nth-child(19) {
+    background: rgb(248, 165, 109);
+    animation: bounce 0.5s ease;
+    position: relative;
+    left: 75%;
+    top: -90%;
+}
+
+.ball:nth-child(20) {
+    background: red;
+    animation: bounce 0.5s ease;
+    position: relative;
+    left: 3%;
+    top: -80%;
 }
 
 @keyframes bounce {
@@ -160,6 +229,27 @@ body {
         transform: translate3d(0, 0, 0);
     }
     100% {
-        transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 310px, 0);
     }
 }
+
+#box2 .greeting {
+    z-index: 2;
+    position: absolute;
+    left: 43%;
+    top: 35%;
+    background-color: ;   
+    font: 22px 'WindSong', Arial;
+    /* transition: transform; -- animate to make word move in some way after the balls move */
+}
+
+
+
+
+/* BOX 3:  */
+/* BOX 4:  */
+/* BOX 5:  */
+/* BOX 6:  */
+/* BOX 7:  */
+/* BOX 8:  */
+/* BOX 9:  */
