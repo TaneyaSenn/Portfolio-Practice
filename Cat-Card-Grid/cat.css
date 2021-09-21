@@ -1,0 +1,42 @@
+/* Styling */
+#container {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid lightgray;
+    box-shadow: 5px 5px 3px darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    margin: 0px 5px 5px 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1000px) {
+    #container {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #container {
+        grid-template-columns: auto;
+    }
+}
