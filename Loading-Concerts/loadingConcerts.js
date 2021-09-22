@@ -1,20 +1,10 @@
 window.addEventListener("load", function () {
 
-    function addCard(concertsItem) {
+            function addCard(concertsItem) {
 
-        // get container element
-        const container = document.querySelector("#container");
-        
-        // create div for new card
-        const newCard = document.createElement("div");
-        // create div for header of new card
-        const header = document.createElement("div");
-        // create div for body of new card
-        const body = document.createElement("div");
-    
-        // for testing
-        console.log(container);   
-    };
+            // get container element
+            const container = document.querySelector("#container"); 
+            };
         
             concerts.forEach(function(concertsItem) {
     
