@@ -8,31 +8,25 @@ Some of these include:
 
 Using asynchronous functions to dynamically create elements and populate data.
 
-
 ## Using node.js to Retrieve Form Data
 
 Practicing both the GET and POST method to retrieve form data results from a web application.
-
 
 ## Basic Animations with Vanilla HTML and CSS
 
 Exploring the use of CSS animations to create hover, glowing effects, drop downs on load and hidden visibility.
 
-
-## Loading Concert Cards using JavaScript and CSS Grid
+## Consecutively Loading Concert Cards using JavaScript and CSS Grid
 
 Using a forEach loop, the code dynamically creates and populates data from an external JS file array.
-
 
 ## Bootstrap 4 Basic Skeleton Site
 
 Exploring the use of BS4 to style a site quicker than with CSS from scratch.
 
-
 ## Changing Text with addEventListener and onclick
 
 Using vanilla JS, changing original text to something new based on the click event.
-
 
 ## And more to come..
 
