@@ -1,0 +1,19 @@
+.main {
+    height: 400px;
+    background-color: lightsteelblue;
+}
+
+
+.firstRow {
+    height: 180px;
+
+}
+
+.rowBorder {
+    border: solid lightgray 2px; 
+}
+
+#rowsID {
+    display: grid;
+    
+}
