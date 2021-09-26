@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pokemon Fansite</title>
+    <meta charset="utf-8">
+
+    <!-- Required by Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <!-- Required for JS -->
+    <script src="./javascript.js"></script>
+</head>
+
+<body>
+    
+    <div class="jumbotron jumbotron-fluid p-3 mb-0">
+
+        <img src="images/pokemon.png" alt="Pokemon heading" class="mx-auto d-block">
+    </div> 
+
+        <!-- Top Nav -->
+        <nav class="navbar bg-warning">
+        <ul class="nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">TV Show</a>
+        </li> 
+        <li class="nav-item active">
+            <a class="nav-link active" id="activeNavLink" href="#">Game Mechanics</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.pokemon.com">Official Website</a>
+        </li>
+        </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="container p-3"> 
+            <!-- Single Row, Triple Column Layout -->
+            <div class="row">
+                <!-- Column 1 (sidenav)-->
+                <div class="col-sm-2">
+                    <h3>Game Mechanics</h3>
+                    <ul class="nav flex-column nav-pills">
+                        <li>
+                            <a class="nav-link" href="#">Pokemon</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Moves</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Abilities</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Items</a>
+                        </li>
+                        <li>
+                            <a class="nav-link active" href="#">Types</a>
+                        </li>
+                </div>
+                 <!-- Column 2 (center content with striped 5x5 table) -->
+                <div class="col-sm-6">
+                    <h2>Type chart</h2>
+                    <p>This chart lets you know how effective an attacking move of a given type <em>(left)</em> is against a defending Pokemon of another type <em>(top)</em>. An <b>X</b> means "not very effective", while an <strong>O</strong> means "super effective"!</p>
+                    <table class="table table-striped">
+                        <thead id="tableHead">
+                          </thead>
+                    </table> 
+                </div>
+                 <!-- Column 3 (card) -->
+                <div class="col-sm-4">
+                    <h4>Featured Pokemon</h4>
+                    <div class="card" id="pokemonCard"> 
+                    <img class="card-img-top" id="featuredImg" alt="pokemon image">
+                    <div class="card-header text-left"></div>
+                    <div class="card-body">
+                        <p class="card-text" id="typesParagraph"></p>
+                        <button a href="#" class="btn btn-secondary" id="randomizeBttn">Randomize</button>
+                    </div>    
+                    </div>
+                </div>               
+            </div>
+        </div>
+
+</body>
+
+</html>

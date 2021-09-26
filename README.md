@@ -29,6 +29,5 @@ Exploring the use of BS4 to style a site quicker than with CSS from scratch.
 Using vanilla JS, changing original text to something new based on the click event.
 
 
-
-
 ## And more to come..
+
