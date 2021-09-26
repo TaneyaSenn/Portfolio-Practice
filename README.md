@@ -4,9 +4,9 @@ Here, you will find several folders with various works demonstrating skills I've
 
 Some of these include:
 
-## Loading Concert Cards using JavaScript and CSS Grid
+## Website using AJAX, JSON, JS and Bootstrap 4
 
-Using a forEach loop, the code dynamically creates and populates data from an external JS file array.
+Using asynchronous functions to dynamically create elements and populate data.
 
 
 ## Using node.js to Retrieve Form Data
@@ -17,6 +17,11 @@ Practicing both the GET and POST method to retrieve form data results from a web
 ## Basic Animations with Vanilla HTML and CSS
 
 Exploring the use of CSS animations to create hover, glowing effects, drop downs on load and hidden visibility.
+
+
+## Loading Concert Cards using JavaScript and CSS Grid
+
+Using a forEach loop, the code dynamically creates and populates data from an external JS file array.
 
 
 ## Bootstrap 4 Basic Skeleton Site
